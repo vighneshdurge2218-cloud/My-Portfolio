@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">VD</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div id="particles"></div>
+        <div class="hero-content">
+            <h1>Vighnesh Durge</h1>
+            <p>Front - End Developer & UI/UX Enthusiast</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section fade-in">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-image">VD</div>
+            <div class="about-text">
+                <p>Hello! I'm Vighnesh, a passionate Front - End developer...</p>
+                <p>I love building clean UI and smooth user experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section fade-in">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-card">
+            <div class="skill-icon">⚛️</div>
+            <h3>Frontend Development</h3>
+            <p>HTML, CSS, JavaScript, React, Tailwind CSS</p>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>Backend Development</h3>
+            <p>Node.js, Express, Python, Django</p>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <h3>Database</h3>
+            <p>MySQL, PostgreSQL, MongoDB</p>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+            <div class="skill-icon">🛠️</div>
+            <h3>Tools & Platforms</h3>
+            <p>Git, GitHub, VS Code, Figma, </p>
+        </div>
+
+        <!-- Video Editing Tools -->
+        <div class="skill-card">
+            <div class="skill-icon">🎬</div>
+            <h3>Video Editing Tools</h3>
+            <p>Adobe Premiere Pro, DaVinci Resolve, CapCut, Filmora</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Projcts-->
+ <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-image">🛍️</div>
+            <div class="project-content">
+                <h3 class="project-title">SmartShop – E-Commerce Website</h3>
+                <p class="project-description">
+                    A full-stack e-commerce platform with product listing, cart, secure checkout,
+                    and admin dashboard for product management.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-image">📊</div>
+            <div class="project-content">
+                <h3 class="project-title">DocBot – AI Conversation Tool</h3>
+                <p class="project-description">
+                    DocBot is an AI assistant using Python, NLP, Transformers, and Flask to answer 
+                    queries, extract document insights, and deliver fast, accurate automated support.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-image">🤖</div>
+            <div class="project-content">
+                <h3 class="project-title">Deepfake Image Detection System</h3>
+                <p class="project-description">
+                    A deepfake detection system using Python, TensorFlow, CNNs, and OpenCV 
+                    to analyze facial features, detect manipulations, and verify image authenticity reliably.
+                </p>
+               
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Contact -->
+<!-- ==========================
+     Contact (square card)
+     Replace your current #contact section with this
+     ========================== -->
+<section id="contact" class="section">
+  <h2 style="text-align:center; margin-bottom:1.25rem;">Get In Touch</h2>
+
+  <div class="contact-card">
+
+    <!-- left: compact form -->
+    <form class="contact-card-form" id="contactCardForm" autocomplete="off">
+      <div class="form-row">
+        <input type="text" id="cname" name="name" placeholder="Your name" required />
+        <input type="email" id="cemail" name="email" placeholder="Your email" required />
+      </div>
+
+      <div class="form-row">
+        <input type="tel" id="cphone" name="phone" placeholder="Phone (optional)" />
+      </div>
+
+      <div class="form-row">
+        <textarea id="cmessage" name="message" rows="3" placeholder="Short message..." required></textarea>
+      </div>
+
+      <div class="form-row form-actions">
+        <button type="submit" class="submit-btn">Send</button>
+        <div id="contactStatus" class="contact-status" aria-live="polite"></div>
+      </div>
+    </form>
+
+    <!-- right: your compact contact info -->
+    <div class="contact-card-info">
+      <div class="info-top">
+        <div class="profile-badge">VD</div>
+        <div class="info-name">
+          <div class="name-line">Vighnesh Durge</div>
+          <div class="role-line">Front - end Developer</div>
+        </div>
+      </div>
+
+      <div class="info-list">
+        <div class="info-item"><span class="icon">📧</span><a href="mailto:yourname@email.com">vighneshdurge2218@gmail.com</a></div>
+        <div class="info-item"><span class="icon">📱</span><a href="tel:+919876543210">+91 8999577938</a></div>
+        <div class="info-item"><span class="icon">💼</span><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/vighnesh-durge-b23356297/</a></div>
+        <div class="info-item"><span class="icon">📍</span><span>Chandrapur, India</span></div>
+      </div>
+
+      <div class="info-foot">Prefer WhatsApp? Click phone to message.</div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- JS LINK -->
+    <script src="script.js"></script>
+</body>
+</html>
